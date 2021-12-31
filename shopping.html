@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>food Browser</title>
+</head>
+<style>
+ 
+body {
+  background-image: linear-gradient(to right bottom, #b91eda, #a02ae0, #8234e5, #5d3be8, #1241eb);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+main {
+  max-width: 780px;
+  margin: 5% auto;
+}
+
+.card1{
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+  background:greenyellow;
+}
+.card2{
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+  background:lightsalmon;
+}
+.card3{
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+  background:lightsteelblue;
+}
+.card4{
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+  background:lightseagreen;
+}
+
+h1{
+  text-align: center;
+  font-size: 72px;
+  font-weight: 700;
+
+}
+.span{
+    font-size: 20px;
+    font-weight: 900;
+    position: absolute;
+    border: solid blue;
+    border-radius: 60%;
+    height: 14px;
+    width: 8px;
+    background:blue;
+}
+.fa {
+  float: right; 
+  font-size: 72px;
+  margin-right: 20px;
+  margin-top: -80px;
+}
+header{
+  text-align: left;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  padding: 20px;
+}
+a{
+  font-size: 32px;
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
+}
+a:hover{
+  color: aliceblue;
+}
+sub{
+  margin-left: 100px;
+  font-size: 28px;
+  font-weight: 900;
+}
+.box{
+  margin: 30px 50px;
+}
+.box1{
+  padding: 10px;
+  margin-left:150px;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+img{
+  width:65%;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.left{
+  float: right;
+  width: 250px;
+  line-height: normal;
+  font-size: 20px;
+}
+footer{
+  float: right;
+  margin-right: 10px;
+}
+button{
+float: right;
+background: black;
+color: white;
+border-radius: 20px;
+text-shadow: 20px ;
+border: 5px solid white;
+font-size: 28px;
+cursor: pointer;
+}
+button:hover{
+  color:red;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+@media (max-width:800px) {
+  body{
+    width: 100%;
+  }
+  main{
+  max-width: 95%;
+
+  }
+  .card1{
+    width: 100%;
+    height: 100%;
+  }.card2{
+    width: 100%;
+  
+  }.card3{
+    width: 100%;
+    
+  }.card4{
+    width: 100%;
+    height: 100%;
+  }
+  h1{
+    width: 100%;
+    margin-top: -10px;
+    text-align: center;
+  }
+  .span{
+    
+    font-size: 20px;
+    font-weight: 900;
+
+  }
+  .fa {
+  float: right; 
+  font-size: 72px;
+  margin-right: 30px;
+  margin-top: -40px;
+}
+  header{
+    width: 100%;
+  text-align: left;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  padding: 20px;
+}
+a{
+  width: 100%;
+  font-size: 32px;
+}
+sub{
+  width: 100%;
+  margin-left: 100px;
+  font-size: 28px;
+  font-weight: 900;
+}
+.box{
+  width: 100%;
+  margin: 30px 50px;
+}
+.box1{
+  padding: 10px;
+  margin-left:50px;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+img{
+  width:35%;
+  height: 35%;
+  margin-left: -15px;
+}
+.left{
+  float: right;
+  width: 250px;
+  line-height: normal;
+  font-size: 20px;
+}
+footer{
+  float: right;
+  margin-right: 10px;
+}
+button{
+float: right;
+background: black;
+color: white;
+border-radius: 20px;
+text-shadow: 20px ;
+border: 5px solid white;
+font-size: 28px;
+margin-top: -10px;
+cursor: pointer;
+}
+button:hover{
+  color:red;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+}
+
+</style>
+<html>
+<body>
+  <h1>Fried World</h1>
+  <a href="index.html">BACK⬅️</a>
+  <i class="fa fa-shopping-cart" >
+  <span class="span">4</span></i>
+  <main>
+    <div class="card1">
+      <header>FRIED CHICKEN</header>
+      <sub><em>CRISPY CHICK</em></sub>
+      <main class="left">The first dish known to have been deep fried was fritters, which were popular in the European Middle Ages.
+         However, it was the Scottish who were the first Europeans to deep fry their chicken in fat though without seasoning..</main>
+       <main class="box"><img src="images/fried10.jpg" height="300px"alt=""></main>
+       <span class="box1">₹75/only</span>
+       <footer><button type="button" >ADD CART</button>
+         </footer>
+    </div>
+  </main>
+  <main>
+    <div class="card2">
+      <header>CRUNCH CHICKEN</header>
+      <sub><em>Fried chick</em></sub>
+      <main class="left">The first dish known to have been deep fried was fritters, which were popular in the European Middle Ages.
+         However, it was the Scottish who were the first Europeans to deep fry their chicken in fat though without seasoning..</main>
+       <main class="box"><img src="images/fried1.png"  alt=""></main>
+       <span class="box1">₹85/only</span>
+       <footer><button type="button" >ADD CART</button>
+         </footer>
+    </div>
+  </main>
+  <main>
+    <div class="card3">
+      <header>HIDDEN CHICKEN</header>
+      <sub><em>Goleden hen</em></sub>
+      <main class="left">The first dish known to have been deep fried was fritters, which were popular in the European Middle Ages.
+         However, it was the Scottish who were the first Europeans to deep fry their chicken in fat though without seasoning..</main>
+       <main class="box"><img src="images/fried5.jpg"  alt=""></main>
+       <span class="box1">₹89/only</span>
+       <footer><button type="button" >ADD CART</button>
+         </footer>
+    </div>
+  </main>
+  <main>
+    <div class="card4">
+      <header>BUNGER CHICKEN</header>
+      <sub><em>Beast Fried</em></sub>
+      <main class="left">The first dish known to have been deep fried was fritters, which were popular in the European Middle Ages.
+         However, it was the Scottish who were the first Europeans to deep fry their chicken in fat though without seasoning..</main>
+       <main class="box"><img src="images/fried6.jpg" height="300px" alt=""></main>
+       <span class="box1">₹82/only</span>
+       <footer><button type="button" >ADD CART</button>
+         </footer>
+    </div>
+  </main>
+</body>
+</html>
